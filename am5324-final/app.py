@@ -20,6 +20,10 @@ def hello():
 def assignments():
     return render_template("assignments.html") 
 
+@app.route("/classes")
+def classes():
+    return render_template("classes.html")
+
 @app.route("/1006")
 def engi():
     return "1006 homepage"
