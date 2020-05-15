@@ -16,6 +16,10 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html") 
 
+@app.route("/assignments")
+def assignments():
+    return render_template("assignments.html") 
+
 @app.route("/1006")
 def engi():
     return "1006 homepage"
