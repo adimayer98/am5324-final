@@ -16,6 +16,9 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html") 
 
+@app.route("/1006")
+def engi():
+    return "1006 homepage"
 #start the server
 if __name__ == "__main__":
     app.run()
